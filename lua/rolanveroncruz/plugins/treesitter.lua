@@ -22,6 +22,8 @@ return {
       },
       -- ensure these language parsers are installed
       ensure_installed = {
+        "go",
+        "rust",
         "json",
         "javascript",
         "typescript",

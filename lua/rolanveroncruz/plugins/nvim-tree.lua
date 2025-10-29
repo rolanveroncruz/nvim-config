@@ -7,8 +7,19 @@ return {
     vim.g.loaded_netrwPlugin =1 
 
     nvimtree.setup({
+    filters = {
+      custom = {
+          ".DS_Store", 
+          "**/*.synctex.gz",
+          '*.aux',
+          '*.fls',
+          '*.log',
+          '**.fdb_latexmk',
+        },
+    },
+
     view = {
-      width=35,
+      width=40,
       relativenumber = true,
     },
 
@@ -33,9 +44,7 @@ return {
         },
       },
     },
-    filters = {
-      custom = {".DS_Store"},
-    },
+    
     git = {
       ignore = false,
     },

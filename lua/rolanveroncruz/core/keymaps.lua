@@ -22,3 +22,7 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab"}
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Goto next tab"})
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Goto previous tab"})
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab."})
+
+-- vimtex
+keymap.set("n", "<leader>vc", ":VimtexCompile<CR>", {desc="Vimtex Compile"})
+keymap.set("n", "<leader>vo", ":VimtexOutput<CR>", {desc = "Vimtex Output"})
